@@ -1,0 +1,14 @@
+.container{
+    padding: 20px;
+    font-size: 100%;
+    text-align: justify;
+    
+}
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+    .container img {
+      max-width: 100%; /* Allow the image to scale down */
+    }
+  }

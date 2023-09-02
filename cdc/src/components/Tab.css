@@ -3,12 +3,17 @@
     font-size: 100%;
     text-align: justify;
     
+}.space{
+    display:flex;
+    flex-direction:row;
+    margin-top:4%;
 }
 @media (max-width: 768px) {
-    .container {
-      flex-direction: column; /* Stack elements vertically on smaller screens */
-    }
+    
     .container img {
       max-width: 100%; /* Allow the image to scale down */
+    }.space{
+        flex-direction: column;
+       
     }
   }

@@ -1,8 +1,12 @@
 import React from "react";
 
 export const About = ()=>{
-    return <div>
-<p>hello</p>
-
-    </div>;
+    return (
+        <div>
+        <p>About us</p>
+        
+            </div>
+    )
+    
+   
 };

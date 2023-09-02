@@ -6,7 +6,10 @@ export const Navbar = ()=>{
 
     return (
     <nav>
-        <Link to="/" className="title">Coimbatore Dermal Clinic</Link>
+        <Link to="/" className="title">
+          <h3 style={{color:"#051672"}}>CDC</h3>
+            <h5 style={{color:"#9F2AA2"}}>Coimbatore Dermal Clinic</h5>
+            </Link>
         <div className="menu" onClick={()=>{
             setMenuOpen(!menuOpen);
         }}>
@@ -19,13 +22,13 @@ export const Navbar = ()=>{
                 <NavLink to="/home">Home</NavLink>
             </li>
             <li>
-                <NavLink to="about">About Us</NavLink>
+                <NavLink to="/about">About Us</NavLink>
             </li>
             <li>
-                <NavLink to="our doctors">Our Doctors</NavLink>
+                <NavLink to="/doctors">Our Doctors</NavLink>
             </li>
             <li>
-                <NavLink to="treatments offered">Treatments Offered</NavLink>
+                <NavLink to="treatments">Treatments Offered</NavLink>
             </li>
         </ul>
     </nav>

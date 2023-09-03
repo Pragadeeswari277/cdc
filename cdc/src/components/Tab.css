@@ -3,7 +3,12 @@
     font-size: 100%;
     text-align: justify;
     
-}.space{
+}.treat{
+    display:flex;
+    flex-direction:row;
+    margin-top:3%;
+  }
+.space{
     display:flex;
     flex-direction:row;
    
@@ -55,7 +60,12 @@
 }
 
 @media (max-width: 768px) {
-    
+    .container img {
+        max-width: 100%; /* Allow the image to scale down */
+      }.treat{
+        flex-direction: column;
+        justify-content: center;
+      }
     .space{
         flex-direction: column;
        

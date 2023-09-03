@@ -1,6 +1,6 @@
 .active{
     
-    background-color: #9F2AA2;
+    background-color: #A98CC6;
     color:white;
 }
 
@@ -37,7 +37,7 @@ nav ul li a{
     border-radius: 0.5rem;
 }
 nav ul li a:not(.active):hover{
-    background-color: #239CCF;
+    background-color: #59b0d5;
     color:white;
 }
  nav .menu{

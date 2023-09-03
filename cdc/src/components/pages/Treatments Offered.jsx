@@ -64,7 +64,7 @@ export const Treatments = ()=>{
         <div className="treat" >
           <img src={item.image} style={{width:"250px",height:"auto"}} />
           <div style={{display:"flex",flexDirection:"column",marginLeft:"2%",width:'50%'}}>
-          <h3 style={{marginTop:"5%",marginBottom:"1%"}}>{item.disorder}</h3>
+          <h3 style={{marginTop:"5%",marginBottom:"1%",color:'#122DB7'}}>{item.disorder}</h3>
           <p style={{lineHeight: '2'}}>{item.text}  </p>
          </div>
           

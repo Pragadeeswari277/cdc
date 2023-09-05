@@ -58,18 +58,22 @@ export const Treatments = ()=>{
         },
         
       ];
-    return (
-        <div className="container">
-      {data.map((item) => (
-        <div className="treat" >
-          <img src={item.image} style={{width:"250px",height:"auto"}} />
-          <div style={{display:"flex",flexDirection:"column",marginLeft:"2%",width:'50%'}}>
-          <h3 style={{marginTop:"5%",marginBottom:"1%",color:'#122DB7'}}>{item.disorder}</h3>
-          <p style={{lineHeight: '2'}}>{item.text}  </p>
-         </div>
-          
+      return (
+        <div className="grid">
+          {data.map((item) => (
+            <div className="treat zoomable" key={item.id}>
+              <div className="zoomable-image">
+                <img 
+                  src={item.image}
+                  alt={item.disorder}
+                />
+              </div>
+              <div className="zoomable-text">
+                <h3 style={{ color: '#122DB7' }}>{item.disorder}</h3>
+                <p>{item.text} </p>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-    );
-};
+      );
+    };

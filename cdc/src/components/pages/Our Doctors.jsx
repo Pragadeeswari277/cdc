@@ -1,6 +1,6 @@
 import React from "react";
 import "../Tab.css"; 
-
+import Contact from "../Contacts";
 export const Doctors = ()=>{ 
     const info=[
         {id:1,
@@ -74,7 +74,7 @@ export const Doctors = ()=>{
               
                 </div>
         ))}
-         
+       
     </div>
     )
 };

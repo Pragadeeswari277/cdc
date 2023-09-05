@@ -8,7 +8,7 @@ export const Navbar = ()=>{
     <nav>
         <Link to="/" className="title">
           <h3 style={{color:"#051672"}}>CDC</h3>
-            <h5 style={{color:"#9F2AA2"}}>Coimbatore Dermal Clinic</h5>
+            <h5 style={{color:"#9F2AA2"}}>Coimbatore Dermal Center</h5>
             </Link>
         <div className="menu" onClick={()=>{
             setMenuOpen(!menuOpen);

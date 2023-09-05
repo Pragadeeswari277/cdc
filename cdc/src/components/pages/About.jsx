@@ -1,6 +1,6 @@
 import React from "react";
 import "../Tab.css";
-
+import Contact from "../Contacts";
 export const About = ()=>{
     return (
         <div className="container">
@@ -23,7 +23,8 @@ focus on customer satisfaction, they offer a wide range of services,
       <div className="image">
       <img src="H.jpg" className="imageSize"/>
       </div>
-      </div>
+      </div> 
+     <div className="footer"></div>
      </div>
     )
     

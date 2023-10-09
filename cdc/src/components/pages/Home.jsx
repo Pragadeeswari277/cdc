@@ -1,13 +1,14 @@
 import React from "react";
 import Contact from "../Contacts";
-import { Carousel } from "../Carousel";
+
+import CoverflowSlider from "../CoverflowSlider";
 export const Home = ()=>{
     return(
-        <div className="center">
+        <div className="container center">
       
-      <h3 style={{marginTop:"3%",color:"#122DB7"}}>Welcome to Coimbatore Dermal Center</h3>
+      <h3 className="welcome" >WELCOME TO COIMBATORE DERMAL CENTRE</h3>
        
-       <Carousel/>
+     <CoverflowSlider/>
       <Contact/>
       
         </div>

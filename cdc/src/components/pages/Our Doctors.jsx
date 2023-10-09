@@ -25,7 +25,7 @@ export const Doctors = ()=>{
     <div className="container">
         <div className="center">
        
-        <img src="Avatar.png" className="imageSize"/>
+        <img src="founder.jpg" className="imageSize"/>
 
         <h3 style={{fontWeight:"bold",marginTop:"2%"}}>Dr.M Sivalingam</h3>
         <h3 style={{color:"red",marginTop:"0.5%"}}>Founder</h3>
@@ -45,30 +45,24 @@ export const Doctors = ()=>{
         </p>
         </div>
           
-        <h3 style={{marginTop:"3%",color:"#122DB7"}}>OUR DOCTORS</h3>
+        <h3 style={{marginTop:"3%",color:"#122DB7",textAlign:"center",marginBottom:"2%"}}>OUR DOCTORS</h3>
 
         {info.map((item)=>(
 
            
-            <div className={item.id%2!=0?"separator1":"separator2"}>
+            <div className={item.id%2!=0?"doctor-card separator1":"doctor-card separator2"}>
                
                   
                     {item.id%2==1&&
                     <div className="dimage">
-             
-                    <img src={item.image} className="imageSize"/>
-                    <h3 style={{fontWeight:"bold",marginTop:"2%",textAlign:"center"}}>{item.name}</h3>
+                    <h2 style={{fontWeight:"bold",marginTop:"2%",textAlign:"center",marginBottom:"5%"}}>{item.name}</h2>
                      </div>} 
-                
                  <div className="dcontent">
                      <p style={{lineHeight:'2',marginTop:"1%",textAlign:"justify",fontSize:20}}>{item.about}</p>
                      </div>
-
                      {item.id%2==0&&
                      <div className="dimage">
-             
-                     <img src={item.image} className="imageSize"/>
-                     <h3 style={{fontWeight:"bold",marginTop:"2%",textAlign:"center"}}>{item.name}</h3>
+                     <h2 style={{fontWeight:"bold",marginTop:"2%",textAlign:"center",marginBottom:"5%"}}>{item.name}</h2>
                       </div>
                      }
               

@@ -18,7 +18,7 @@ export const Treatments = ()=>{
           id: 3,
           image: 'Pediatric.jpg',
           disorder:'Pediatric Dermatology',
-          text: 'Our expert pediatric dermatologists cater to the unique skin needs of children, offering gentle and specialized care for pediatric skin conditions.',
+          text: 'Our dedicated team of pediatric dermatologists cater to the unique skin needs of children, offering gentle and specialized care for pediatric skin conditions.',
         },
         {
           id: 4,
@@ -59,6 +59,8 @@ export const Treatments = ()=>{
         
       ];
       return (
+        <div className="container">
+        <h3 style={{marginTop:"3%",color:"#122DB7",textAlign:"center"}}>OUR TREATMENTS</h3>
         <div className="grid">
           {data.map((item) => (
             <div className="treat zoomable" key={item.id}>
@@ -69,11 +71,12 @@ export const Treatments = ()=>{
                 />
               </div>
               <div className="zoomable-text">
-                <h3 style={{ color: '#122DB7' }}>{item.disorder}</h3>
-                <p>{item.text} </p>
+                <h3 style={{ color: '#122DB7',marginBottom:"3%" }}>{item.disorder}</h3>
+                <p style={{marginBottom:"3%"}}>{item.text} </p>
               </div>
             </div>
           ))}
+        </div>
         </div>
       );
     };

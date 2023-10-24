@@ -51,57 +51,69 @@ const slidesData = [
 },
 ];
 
-const CoverflowSlider = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [fi,setfi]=useState(0);
-  const [la,setla]=useState(2);
-//fi - first image and  la - last image
-  const nextSlide = () => {
-    console.log("Next Slide Clicked"); 
-    setActiveIndex((prevIndex) =>
-      prevIndex === slidesData.length - 1 ? 0 : prevIndex + 1
-    ); 
-   
-   setla(
-   la==slidesData.length - 1 ? 2 : la + 1
-   );
-   setfi(fi==slidesData.length - 1||la==slidesData.length - 1?0:fi+1);
-  };
+const colors = ["#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28"];
+const delay = 2500;
 
-  const prevSlide = () => {
-    console.log("Prev Slide Clicked"); 
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? slidesData.length - 1 : prevIndex - 1
+function Slideshow() {
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === slidesData.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
     );
-    
-   setfi(fi==0?slidesData.length - 3:fi-1)
-   setla(fi==0||la==2?slidesData.length - 1:la-1)
-   
-  };
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
 
   return (
-    <div className="coverflow-container">
-      <button onClick={fi>0?prevSlide:null}  disabled={fi==0?true:false}   className="slider-button">
-      ❮
-      </button>
-      <div className="slider">
-        {slidesData.map((slide, index) => (
+    
+    <div className="slideshow" style={{justifyContent:"center",alignItems:"center"}}>
+      
+      <div
+        className="slideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {slidesData.map((item, index) => (
           <div
+            className="slide"
             key={index}
+           
+           
           >
-            {
-        index>=fi&&index<=la&&
-       <img className="photo" src={slide.image}  />
-    } 
 
+            <img className="img" src={item.image}/>
           </div>
         ))}
       </div>
-      <button onClick={la<slidesData.length-1?nextSlide:null} disabled={la==slidesData.length-1?true:false}    className="slider-button" >
-      ❯
-      </button>
-    </div>
-  );
-};
 
-export default CoverflowSlider;
+      <div className="slideshowDots horizontal-scroll-view">
+        {colors.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
+   
+  );
+}
+
+export default Slideshow;

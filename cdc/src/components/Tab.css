@@ -4,7 +4,9 @@
     text-align: justify;
     margin-bottom: 100px;
    
-}.grid{
+}
+
+.grid{
     padding: 50px;
       font-size: 100%;
       text-align: justify;
@@ -13,7 +15,8 @@
       justify-content: space-between;
   }
   .welcome{
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom:2%;
     color:#122DB7;
   }
   .treat {
@@ -133,11 +136,15 @@
 @media (max-width: 768px) {
     .container img {
         max-width: 100%; /* Allow the image to scale down */
-      }.treat{
+      }
+      
+      
+      .treat{
         flex-direction: column;
         justify-content: center;
-        flex: calc(50% - 10px);
+        
         width:100%;
+       
       }
     .space{
         flex-direction: column;
@@ -147,6 +154,7 @@
     }.image{
         width:100%;
         margin-left: 0;
+        
         margin-top: 10%;
     }.separator1{
       flex-direction: column;
@@ -161,7 +169,7 @@
       flex-wrap:none;
       
     }.welcome{
-      font-size: 15px;
+      font-size: 14px;
     }.doctor-card:hover {
         
       background: radial-gradient(circle,rgba(59, 202, 198, 0.435),rgb(190, 120, 190));

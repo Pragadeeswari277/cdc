@@ -4,7 +4,11 @@
     text-align: justify;
     margin-bottom: 100px;
    
+}.scrollview-container {
+  overflow: auto;    /* Enable the scroll */
+  max-height: 400px; /* Adjust the max height as needed */
 }
+
 
 .grid{
     padding: 50px;
@@ -133,7 +137,7 @@
   
   }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .container img {
         max-width: 100%; /* Allow the image to scale down */
       }

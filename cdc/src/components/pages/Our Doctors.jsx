@@ -19,6 +19,12 @@ export const Doctors = ()=>{
             image:'Avatar.png',
             name:"Dr. B. Jeevankumar",
             about:"Dr. B. Jeevankumar is a highly qualified and respected Dermatologist based in Peelamedu, Coimbatore, Tamil Nadu, India. With considerable experience in the field, he specializes in a wide range of dermatological treatments, including Acne Treatment, Tattoo Removal, Mole Removal, Wart Removal, Laser Hair Removal, and Botox, among others. Driven by a passion for his noble profession, he strives to provide the best possible care and treatment for his patients, ensuring their satisfaction and well-being. With a proactive approach to healthcare, he aims to serve the local community comprehensively, offering the highest standard of dermatological care."
+        },
+        {
+            id:4,
+            image:'Avatar.png',
+            name:"Dr. S.A. Damodaran",
+            about:"Dr. S.A. Damodaran, a highly regarded Dermatologist with over 4 years of experience, offers a wide range of modern healthcare treatments at Dr. Damodaran's Dermatology and Cosmetology Clinic in Peelamedu, Coimbatore, Tamil Nadu, India. Fluent in Tamil, Hindi, and English, Dr. Damodaran provides a comfortable and empathetic experience for patients. Specializing in Cosmetic Dermatologic Surgery, Integrative Medicine, and various surgical procedures, Dr. Damodaran treats conditions such as Fungal Infections, Pemphigus, Varicose Veins, and more. With a commitment to delivering the highest standard of healthcare, Dr. Damodaran is recognized as one of the top Dermatologists in Coimbatore, Tamil Nadu."
         }
     ]
     return (
@@ -34,7 +40,7 @@ export const Doctors = ()=>{
         <p style={{lineHeight:'2',marginTop:"1%",fontSize:20}}>
         Dr. M Sivalingam was a pioneering dermatologist 
         and the visionary founder of Coimbatore Dermal Centre. 
-        he exhibited exceptional diligence and discipline in his studies, 
+        He exhibited exceptional diligence and discipline in his studies, 
         securing a seat at Madras Medical College. With the steadfast interest ,
          he specialized in Dermatology and established the renowned center.
           Driven by a passion for medicine and patient care, 

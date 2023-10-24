@@ -50,7 +50,7 @@ const slidesData = [
   image: "Cyrotheraphy.jpg"
 },
 ];
-
+ 
 const colors = ["#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28"];
 const delay = 2500;
 

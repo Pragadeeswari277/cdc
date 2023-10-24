@@ -13,7 +13,7 @@ establishment in Gopalapuram, Coimbatore. With a strong
 focus on customer satisfaction, they offer a wide range of services,
  including skin care clinics, cosmetic surgery, and aesthetic dermatology.
   The dedicated team strives to achieve the company's common vision and goals.
-   Located near Citi Tower, Gandhipuram, commuti ng to the center is easy.
+   Located near Citi Tower, Gandhipuram, commuting to the center is easy.
     Their expertise in addressing various skin concerns and beauty-related
      issues sets them apart as a top player in the field. Trusted by a vast 
      customer base, they continue to expand their offerings to cater to more

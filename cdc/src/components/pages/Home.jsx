@@ -7,8 +7,9 @@ export const Home = ()=>{
         <div className="center">
       
       <h3 className="welcome" >WELCOME TO COIMBATORE DERMAL CENTRE</h3>
-       
+       <div >
      <CoverflowSlider/>
+     </div>
       <Contact/>
       
         </div>

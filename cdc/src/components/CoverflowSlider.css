@@ -47,9 +47,10 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .img{
     width:100%;   
+    
   }.slideshowDot {
    
     margin: 0px 3px 10px;

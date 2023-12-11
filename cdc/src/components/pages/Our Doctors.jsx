@@ -25,6 +25,30 @@ export const Doctors = ()=>{
             about:"Dr.Damodaran S.A, a highly regarded Dermatologist with over 4 years of experience, offers a wide range of modern healthcare treatments at Dr. Damodaran's Dermatology and Cosmetology Clinic in Peelamedu, Coimbatore, Tamil Nadu, India. Fluent in Tamil, Hindi, and English, Dr. Damodaran provides a comfortable and empathetic experience for patients. Specializing in Cosmetic Dermatologic Surgery, Integrative Medicine, and various surgical procedures, Dr. Damodaran treats conditions such as Fungal Infections, Pemphigus, Varicose Veins, and more. With a commitment to delivering the highest standard of healthcare, Dr. Damodaran is recognized as one of the top Dermatologists in Coimbatore, Tamil Nadu."
         }
     ]
+
+
+    const Others=[
+        {id:1,
+        name:"Dr. S. Harshatha",
+        qualification:"MD DVL, DNB DVL",
+        specialist:"",
+             },
+             {id:2,
+                name:"Dr. P. Chidambaranathan",
+                qualification:"MD",
+                specialist:"Consultant Physician & Diabetologist"
+                     },
+                     {id:3,
+                        name:"Dr. J. Anu",
+                        qualification:"BDS",
+                        specialist:"Dental Surgeon"
+                             },
+                             {id:4,
+                                name:"Dr. M. S. Princiya",
+                                qualification:"BDS",
+                                specialist:"Dental Surgeon"
+                                     }
+    ]
     return (
     <div className="container">
         <div className="center">
@@ -61,6 +85,17 @@ export const Doctors = ()=>{
               
                 </div>
         ))}
+
+        <div className="box">
+        {Others.map((item)=>(
+            <div className="cover">
+    <h3 className="t1" style={{color:"white",textAlign:"center"}}>{item.name}</h3>
+    <h4 className="text">{item.qualification} {item.specialist}</h4>
+    </div>
+             ))}
+        </div>
+
+        
        
     </div>
     )

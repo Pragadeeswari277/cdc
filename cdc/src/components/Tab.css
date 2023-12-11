@@ -135,6 +135,17 @@
     width: 80%;
    
   
+  }.box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #8274AB;
+    padding: 5%;
+    border-radius: 5px;
+    margin-top: 2%;
+  }.text{
+    color:rgb(135, 204, 206);
+    text-align: center;
   }
 
 @media (max-width: 769px) {
@@ -186,5 +197,12 @@
         margin-left:0;
         margin-right:0;
        
+    }.box{
+      flex-direction: column;
+    }.text{
+      font-size: 14px;
+      margin-top: 1%;
+    }.t1{
+      margin-top: 3%;
     }
   }

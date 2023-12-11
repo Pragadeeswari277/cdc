@@ -5,7 +5,7 @@ const slidesData = [
   {
     id:1,
     content: "slide1",
-    image: "General.jpg"
+    image: "Mole.jpg"
   },
   {
     id:2,
@@ -15,13 +15,13 @@ const slidesData = [
   {
     id:3,
     content: "slide3",
-    image: "Mole.jpg"
+    image: "Nail.jpg"
   },
   {
     
       id:4,
       content: "slide4",
-      image: "Nail.jpg"
+      image: "General.jpg"
     
   },{
     id:5,

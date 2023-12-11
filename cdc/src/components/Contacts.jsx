@@ -26,8 +26,12 @@ const Maplink=({location})=>{
         <div className="FooterContainer">
             <div style={{margin:"1%"}}>
             <h3 >GET HELP</h3>
-         <p style={{marginTop:"3%"}}><a href="tel:0422 2235446" style={{textDecorationColor:"white",color:"white"}}> 0422 2235446</a></p>
-         <p><a href="mailto:cbeskinclinic@gmail.com" style={{textDecorationColor:"white",color:"white"}}>cbeskinclinic@gmail.com</a></p>
+            <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
+         <p style={{marginTop:"3%",textAlign:"center"}}><a href="tel:9363525446" style={{textDecorationColor:"white",color:"white"}}> 9363525446</a></p>
+         <p  style={{marginTop:"3%",textAlign:"center"}}>/</p>
+         <p style={{marginTop:"3%",textAlign:"center"}}><a href="tel:9363538239" style={{textDecorationColor:"white",color:"white"}}> 9363538239</a></p>
+         </div>
+         <p><a href="mailto:cbeskinclinic@gmail.com" style={{textDecorationColor:"white",color:"white",textAlign:"center"}}>cbeskinclinic@gmail.com</a></p>
         
             </div>
             <div style={{margin:"1%"}}>

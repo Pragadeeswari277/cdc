@@ -6,7 +6,7 @@ export const Home = ()=>{
     return(
         <div className="center">
       
-      <h3 className="welcome" >WELCOME TO COIMBATORE DERMAL CENTRE</h3>
+      <h3 className="welcome" >WELCOME TO THE COIMBATORE DERMAL CENTRE</h3>
        <div >
      <CoverflowSlider/>
      </div>

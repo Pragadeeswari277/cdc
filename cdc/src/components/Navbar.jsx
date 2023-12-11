@@ -10,8 +10,8 @@ export const Navbar = () => {
   return (
     <nav>
       <Link to="/home" className="title">
-        <h3 style={{ color: "#051672" }}>CDC</h3>
-        <h5 style={{ color: "#9F2AA2" }}>Coimbatore Dermal Centre</h5>
+        <h3 style={{ color: "#051672" }}>TCDC</h3>
+        <h5 style={{ color: "#9F2AA2" }}>The Coimbatore Dermal Centre</h5>
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

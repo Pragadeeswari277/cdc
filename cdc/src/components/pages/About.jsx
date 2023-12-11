@@ -8,7 +8,7 @@ export const About = ()=>{
       <div className="space">
         <div className="content">
           <p style={{lineHeight: '2'}}>
-Coimbatore Dermal Centre is a leading dermatology 
+The Coimbatore Dermal Centre is a leading dermatology 
 establishment in Gopalapuram, Coimbatore. With a strong 
 focus on customer satisfaction, they offer a wide range of services,
  including skin care clinics, cosmetic surgery, and aesthetic dermatology.

@@ -43,15 +43,10 @@ const slidesData = [
   id:8,
   content: "slide5",
   image: "Medical.jpg"
-},
-{
-  id:9,
-  content: "slide6",
-  image: "Cyrotheraphy.jpg"
-},
+}
 ];
  
-const colors = ["#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28"];
+const colors = ["#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F", "#FFBB28","#0088FE", "#00C49F"];
 const delay = 2500;
 
 function Slideshow() {

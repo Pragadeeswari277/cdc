@@ -40,18 +40,12 @@ export const Treatments = ()=>{
         },
         {
           id: 7,
-          image: 'Cyrotheraphy.jpg',
-          disorder:'Cyrotheraphy',
-          text: 'Our cutting-edge cryotherapy treatments involve the use of extreme cold to effectively target and remove skin lesions, offering a non-invasive solution.',
-        },
-        {
-          id: 8,
           image: 'Mole.jpg',
           disorder:'Mole Removal',
           text: 'Using advanced techniques, we perform safe and precise mole removal procedures, addressing cosmetic and medical concerns with minimal scarring',
         },
         {
-          id: 9,
+          id: 8,
           image: 'wart.jpg',
           disorder:'Wart Treatment',
           text: 'Our wart treatments employ a variety of methods to eliminate warts, ensuring a swift and effective resolution to these common skin growths.',
@@ -62,7 +56,8 @@ export const Treatments = ()=>{
         <div className="container">
         <h3 style={{marginTop:"3%",color:"#122DB7",textAlign:"center"}}>OUR TREATMENTS</h3>
         <div className="grid">
-          {data.map((item) => (
+          {data.map((item,index) => (
+           
             <div className="treat zoomable" key={item.id}>
               <div className="zoomable-image">
                 <img 
@@ -75,7 +70,12 @@ export const Treatments = ()=>{
                 <p style={{marginBottom:"3%"}}>{item.text} </p>
               </div>
             </div>
-          ))}
+
+          
+          )
+          
+            
+          )}
         </div>
         </div>
       );
